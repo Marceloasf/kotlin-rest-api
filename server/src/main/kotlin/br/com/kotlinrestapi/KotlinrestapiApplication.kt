@@ -1,5 +1,6 @@
 package br.com.kotlinrestapi
 
+import org.springframework.boot.Banner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
@@ -7,5 +8,7 @@ import org.springframework.boot.runApplication
 class KotlinrestapiApplication
 
 fun main(args: Array<String>) {
-	runApplication<KotlinrestapiApplication>(*args)
+    runApplication<KotlinrestapiApplication>(*args) {
+        setBannerMode(Banner.Mode.OFF)
+    }
 }
