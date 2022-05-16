@@ -1,4 +1,4 @@
-package br.com.kotlinrestapi.controller
+package br.com.kotlinrestapi.blog
 
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
