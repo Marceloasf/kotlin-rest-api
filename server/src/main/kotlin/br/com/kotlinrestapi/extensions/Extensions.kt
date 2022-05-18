@@ -9,7 +9,7 @@ import java.util.*
 //  it is usual in Kotlin to provide such functionalities via Kotlin
 //  extensions
 
-fun LocalDateTime.format() = this.format(englishDateFormatter)
+fun LocalDateTime.format(): String = this.format(englishDateFormatter)
 
 private val daysLookup = (1..31).associate { it.toLong() to getOrdinal(it) }
 

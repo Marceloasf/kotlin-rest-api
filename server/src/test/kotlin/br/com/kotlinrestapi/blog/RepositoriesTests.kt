@@ -9,9 +9,9 @@ import org.springframework.data.repository.findByIdOrNull
 
 @DataJpaTest
 class RepositoriesTests @Autowired constructor(
-    val entityManager: TestEntityManager,
-    val userRepository: UserRepository,
-    val articleRepository: ArticleRepository
+    private val entityManager: TestEntityManager,
+    private val userRepository: UserRepository,
+    private val articleRepository: ArticleRepository
 ) {
 
 //  We use here the CrudRepository.findByIdOrNull Kotlin extension provided by default with Spring Data,
