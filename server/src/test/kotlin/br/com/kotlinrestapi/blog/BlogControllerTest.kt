@@ -1,4 +1,4 @@
-package br.com.kotlinrestapi.controller
+package br.com.kotlinrestapi.blog
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test

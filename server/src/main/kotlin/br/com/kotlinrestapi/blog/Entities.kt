@@ -7,6 +7,11 @@ import javax.persistence.GeneratedValue
 import javax.persistence.Id
 import javax.persistence.ManyToOne
 
+//  Here we don’t use data classes with val properties because JPA is not designed to work
+//  with immutable classes or the methods generated automatically by data classes.
+//  While Spring Data JPA makes it possible to use natural IDs, it is recommended to always use
+//  entities with generated IDs in Kotlin
+
 @Entity
 class Article(
     var title: String,
