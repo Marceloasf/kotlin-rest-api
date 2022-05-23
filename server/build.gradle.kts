@@ -7,6 +7,7 @@ plugins {
 	kotlin("plugin.spring") version "1.6.21"
 	kotlin("plugin.jpa") version "1.6.21"
 	kotlin("plugin.allopen") version "1.4.32"
+	kotlin("kapt") version "1.4.32"
 }
 
 group = "br.com"
@@ -37,6 +38,8 @@ dependencies {
 	testImplementation("com.ninja-squad:springmockk:3.0.1")
 
 	testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+
+	kapt("org.springframework.boot:spring-boot-configuration-processor")
 }
 
 tasks.withType<KotlinCompile> {
