@@ -1,2 +1,3 @@
-# KotlinRestApi
-Spring Boot and Kotlin rest api project dedicated to studies
+## Spring Boot and Kotlin Rest Api Project 
+
+Following some Spring and Kotlin docs tutorials while learning the basics and plus some Spring rest implementations along the way.
